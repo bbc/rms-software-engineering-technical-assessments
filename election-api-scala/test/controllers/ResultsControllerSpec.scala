@@ -20,6 +20,7 @@ class ResultsControllerSpec extends PlaySpec with GuiceOneAppPerTest with Inject
     "Test first 5 results" in {
       val scoreboard = runXResults(5)
       scoreboard must not be empty
+      // declared == 5
       // LAB = 4
       // LD = 1
       // winner = noone
@@ -28,6 +29,7 @@ class ResultsControllerSpec extends PlaySpec with GuiceOneAppPerTest with Inject
     "First 100 results" in {
       val scoreboard = runXResults(100)
       scoreboard must not be empty
+      // declared == 100
       // LD == 12
       // LAB == 56
       // CON == 31
@@ -37,6 +39,7 @@ class ResultsControllerSpec extends PlaySpec with GuiceOneAppPerTest with Inject
     "First 554 results" in {
       val scoreboard = runXResults(554)
       scoreboard must not be empty
+      // declared == 554
       // LD == 52
       // LAB = 325
       // CON = 167
@@ -46,6 +49,7 @@ class ResultsControllerSpec extends PlaySpec with GuiceOneAppPerTest with Inject
     "All results" in {
       val scoreboard = runXResults(650)
       scoreboard must not be empty
+      // declared == 650
       // LD == 62
       // LAB == 349
       // CON == 210
