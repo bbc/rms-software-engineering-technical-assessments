@@ -8,4 +8,4 @@ case class ApiResponse (error: String, message: String)
 // TODO: this class should hold:
 //  - the overall winner (if there is one)
 //  - the seats that each party wins in Parliament
-case class Scoreboard(declared: Int)
+case class Scoreboard(winner: String)
